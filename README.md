@@ -7,13 +7,13 @@ The algorithm is written in C prgoramming languague through the platform RobotC.
 above mentioned functions.
 
 # Main fucntion
-Performs the main tasks required.
+##Performs the main tasks required.
 findBall(): finds balls on the field 
 collectBall(): moves the vehicle to the detected ball and retrived the ball
 releaseBall(): moves the vehicle to designate area before releasing ball 
 
 # Sub functions
-Enhances and supports the vehicle when it performs the main tasks
+##Enhances and supports the vehicle when it performs the main tasks
 detectYellow()
 detectYellow2()
 oppVehicleStatus()
