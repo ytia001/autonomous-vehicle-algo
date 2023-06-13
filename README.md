@@ -5,7 +5,7 @@ The main functions performs the main tasks required by the vehecle.
 The Sub functions enchances and supports the vehicle when it performs the main tasks.
 
 # Background
-The algorithm is written in C prgoramming languague through the platform RobotC. The code is installed and work with customized designed Vex robot to perform the 
+The algorithm is written in C prgoramming languague through the platform 'RobotC'. The code is installed and work with customized and designed Vex robot to perform the 
 above mentioned functions.
 
 # Main fucntion
