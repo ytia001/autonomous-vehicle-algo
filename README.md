@@ -9,9 +9,9 @@ The algorithm is written in C prgoramming languague through the platform 'RobotC
 above mentioned functions.
 
 # Main fucntion
-findBall(): finds balls on the field 
-collectBall(): moves the vehicle to the detected ball and retrived the ball
-releaseBall(): moves the vehicle to designate area before releasing ball 
+findBall(): orientate vehicle and move it to find ball on the field.
+collectBall(): moves the vehicle to the detected ball and retrived the ball.
+releaseBall(): moves the vehicle to designate area before releasing ball.
 
 # Sub functions
 detectYellow()
