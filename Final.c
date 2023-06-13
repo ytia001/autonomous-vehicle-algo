@@ -112,13 +112,13 @@ void faceSouth()
 bool detectYellow(){
 	int frontThreshold = 800;
 	int backThreshold = 1800;
-    int sense1 = SensorValue(lineSensorL1);
+    	int sense1 = SensorValue(lineSensorL1);
 	int sense2 = SensorValue(lineSensorR1);
 	int sense3 = SensorValue(lineSensorL2);
 	int sense4 = SensorValue(lineSensorR2);
 
 	int turnSpeed = 50;	    //change turn speed so that it doesnt stuck at edge
-    int backSpeed = -40;
+    	int backSpeed = -40;
 
   //Front detect yellow line
 	if( sense1 < frontThreshold || sense2 < frontThreshold ){
@@ -221,12 +221,12 @@ return true;
 
 void detectVehicle(){       // Added below detectYellow() and detectYellow2()
 	int threshold = 1800;  // very high threshold indicate opponent very close to vehicle
-    int backSensor = SensorValue(disSensor_back);
+    	int backSensor = SensorValue(disSensor_back);
 	int frontSensor = SensorValue(disSensor2);
 
 	int turnSpeed = 50;				//change turn speed so that it is able to move around the opponent
-    int backSpeed = -40;			//change back speed so that it can move away from opponent and leave enough gap
-		vehicleClose = false;
+    	int backSpeed = -40;			//change back speed so that it can move away from opponent and leave enough gap
+	vehicleClose = false;
      //how to know whether to rotate left or right?
 
     //Front detect vehicle
@@ -409,11 +409,11 @@ void releaseBall()
 {
     int encoder_value = -35;
     int encoder_stop_value = 1;
-	int obstacle_distance = 800;
+    int obstacle_distance = 800;
     int servo_speed = -50;
 	//adjust direction using compass here & ensure:
     faceSouth();
-	clearTimer(T4);
+    clearTimer(T4);
 
     while((SensorValue[limit1] && SensorValue[limit2])!= 1 && time1[T4] < 10000) {
         detectYellow();
